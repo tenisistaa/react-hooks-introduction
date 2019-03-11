@@ -48,9 +48,4 @@ const Character = props => {
   return content;
 }
 
-export default React.memo(Character);   //React.memo re-render component only when props change
-
-// second argument (function) - if we want have more control, run if props are equal
-// export default React.memo(Character, (prevProps, nextProps) => { 
-//   return nextProps.selectedChar === prevProps.selectedChar;
-// });
+export default React.memo(Character); 
